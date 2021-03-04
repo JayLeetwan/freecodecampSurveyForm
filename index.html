@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1 id="title">A True Player Form</h1>
+        </header>
+
+        <article>
+            <div class="row">
+
+                <fieldset>
+                    <legend>Your personal data:</legend>
+
+                    <form id="survey-form">
+
+                        <div id="personalInfo">
+                            <div id="personalInfoInputs">
+                                <p id="description">This short form will help you to choose the game to spend time with in the
+                                    next weeks during the quarantine time!</p>
+
+                                <div class="personalDataField">
+                                    <label for="name" id="name-label">Name</label>
+                                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="personalDataField">
+                                    <label for="email" id="email-label">Email</label>
+                                    <input type="email" id="email" placeholder="Enter Your email address" required>
+                                </div>
+                                <div class="personalDataField">
+                                    <label for="number" id="number-label">Number</label>
+                                    <input type="number" id="number" min="100000" max="999999999"
+                                        placeholder="Enter Your number">
+                                </div>
+                            </div>
+                        </div>
+
+                </fieldset>
+
+            </div>
+
+            <div class="row">
+
+                <fieldset>
+                    <legend>Your game preferences</legend>
+
+                    <div class="devicesCheckboxes">
+                        <label for="device">What do You play on:</label>
+
+                        <div><label><input type="checkbox" name="device" value="PC">Personal Computer</label></div>
+                        <div><label><input type="checkbox" name="device" value="PS">Play Station</label></div>
+                        <div><label><input type="checkbox" name="device" value="XBOX">XBOX</label></div>
+                        <div><label><input type="checkbox" name="device" value="Nintendo">Nintendo</label></div>
+                    </div>
+
+                    <label for="gameType">What type of game would You like to play?</label>
+                    <select id="dropdown" name="gameType">
+                        <option value="fps">first-person shooters</option>
+                        <option value="rpg">role-playing games</option>
+                        <option value="rts">real-time strategy</option>
+                        <option value="mmorpg">Massively Multiplayer Online Role-Playing Games</option>
+                        <option value="moba">Multiplayer Online Battle Arena</option>
+                        <option value="stealthg">Stealth Games</option>
+                        <option value="fg">Fighting Games</option>
+                        <option value="survg">Survival Games</option>
+                        <option value="shg">Survival Horror Games</option>
+                        <option value="vs">Vehicle Simulators</option>
+                        <option value="sportg">Sports Games</option>
+                        <option value="platform">Platformer</option>
+                    </select>
+
+                    <div class="inputPreferences">
+                        <div class="col"><label for="gameDifficulty">What is Your preferred game difficulty?</label>
+                            <div><label><input type="radio" name="gameDifficulty" value="HI">High</label></div>
+                            <div><label><input type="radio" name="gameDifficulty" value="MID">Medium</label></div>
+                            <div><label><input type="radio" name="gameDifficulty" value="LO">Casual</label></div>
+                        </div>
+
+                        <div class="col"><label for="gameWorld">How would you like your game world to be?</label>
+                            <div><label><input type="radio" name="gameWorld" value="openWorld">Open world</label></div>
+                            <div><label><input type="radio" name="gameWorld" value="linGamp">Linear gameplay</label>
+                            </div>
+                        </div>
+
+                        <div class="col"><label for="gameTime">How long would you like your game to be?</label>
+                            <div><label><input type="radio" name="gameTime" value="long">Long</label></div>
+                            <div><label><input type="radio" name="gameTime" value="short">Short</label></div>
+                        </div>
+
+                    </div>
+
+                    <div class="ownWordPreferations">
+                        <label for="ownWordPreferations" id="">Anything else in your mind? Tell me, what do you like in
+                            games: </label>
+                        <textarea name="ownWordPreferations" value="ownWordPreferations"></textarea>
+                    </div>
+
+                </fieldset>
+
+            </div>
+            <p>Search for perfect game!</p>
+            <button type="submit" id="submit">Search!</button>
+            </form>
+        </article>
+    </div>
+
+</body>
+
+</html>
