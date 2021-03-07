@@ -17,7 +17,7 @@ body {
     box-shadow: 15px 14px 30px 5px rgba(50,50,50,0.9);
     -webkit-box-shadow: 15px 14px 30px 5px rgba(50,50,50,0.9);
     -moz-box-shadow: 15px 14px 30px 5px rgba(50,50,50,0.9);
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 #title {
@@ -25,6 +25,10 @@ body {
     text-align: center;
 }
 
+fieldset {
+    width: 80%;
+    margin: auto;
+}
 #personalInfo {
     text-align: center;
 }
@@ -104,6 +108,16 @@ input[type="email"]:focus,
     letter-spacing: 2px;
     outline: none;
     text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.submitLabel {
+    width: 250px;
+    padding: 15px 10px;
+    margin: 15px;
+    display: block;
     position: absolute;
     right: 0px;
 }
